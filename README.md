@@ -30,16 +30,23 @@ Python comes bundled with the venv module to create virtual environments.
 ### Create an environment
 Create a .venv folder within the project folder, navigate a prompt to the .venv folder
 
-### Windows
+#### Windows
 Run the following command in the prompt
 > py -3 -m venv .venv
 
-# Install Flask
+### Activate an environment
+Before you work on your project, activate the corresponding environment:
+
+#### Windows
+Run the following command while in the \.venv directory:
+> .venv\Scripts\activate
+
+# Install Flask (If not previously installed)
 Within the activated environment, use the following command to install Flask:
 $ pip install Flask
 
 # Run Flask
-In a command prompt, run the command:
-flask --app flaskr run
+In a command prompt, navigate to the project root directory and run the command:
+flask --app flaskr run --debug
 
 To start the development server
